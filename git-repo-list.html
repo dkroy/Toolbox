@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<ul id="repos">
+</ul>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script>
+$(function(){
+	var gitUrl = "https://api.github.com/users/dkroy/repos?callback=?&per_page=100";
+	$.ajax({
+		url: gitUrl,
+		type: "GET",
+		dataType: "jsonp",
+		jsonpCallback: "loadRepos",
+		crossDomain: true,
+		success: function(data) {
+		loadRepos(data)}
+	});
+	function loadRepos(data){
+		//console.log(data["data"]);
+		jQuery.each( data["data"], function( i, val ) {
+			$("#repos").append("<li><a target='_blank' href='"+val["html_url"]+"'>"+ val["name"] +"</a></li>");
+		});
+	};
+});
+</script>
+</body>
+</html>
