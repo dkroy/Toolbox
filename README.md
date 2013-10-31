@@ -12,3 +12,6 @@ To Get Data:
 2. Click on ftp://gisftp.metc.state.mn.us/google_transit.zip  
 3. Unzip data  
 4. Start Parsing  
+
+Also for the MTVA:  
+http://wiki.mvta.com/
