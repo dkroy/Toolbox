@@ -18,3 +18,7 @@ http://wiki.mvta.com/
 
 More Data:  
 https://code.google.com/p/googletransitdatafeed/wiki/PublicFeeds  
+
+Moving Marker:  
+http://jsfiddle.net/bmSbU/2/  
+https://github.com/broady?tab=repositories  
