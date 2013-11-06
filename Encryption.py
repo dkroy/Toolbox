@@ -2,10 +2,8 @@ import string
 
 
 class rot13:
-    def __init__(self):
-        pass
-        
-        
+
+
     @staticmethod
     def decrypt(message):
         return rot13.encrypt(message)
